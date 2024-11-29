@@ -168,8 +168,10 @@ public class ArrCharOps {
 
         for (int i = 0; i < Math.min(str1.length(), str2.length()); i++) {
         //if the characters in index i are different, check who's smaller
-            if(str1.charAt(i)!=str2.charAt(i)){
-                if(str1.charAt(i)<str2.charAt(i)){
+            char char1 = Character.toLowerCase(str1.charAt(i));
+            char char2 = Character.toLowerCase(str2.charAt(i));
+            if(char1 != char2){
+                if(char1 < char2){
                     return -1;
                 }
                 else{
