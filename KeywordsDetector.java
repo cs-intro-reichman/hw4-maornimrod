@@ -43,9 +43,10 @@ public class KeywordsDetector {
                 if(print){
                     break;
                 }
-                j++;
+                while (j < str.length() && str.charAt(j) == ' ') {
+                    j++;
+                }
             }
-
         }
     }
 }
