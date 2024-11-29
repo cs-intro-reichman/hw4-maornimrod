@@ -34,7 +34,7 @@ public class KeywordsDetector {
                 }
 
                 for(int m = 0; m< keywords.length; m++){
-                    if(word.toLowerCase().equals(keywords[m])){
+                    if(word.toLowerCase().equals(keywords[m].toLowerCase())){
                         System.out.println(str);
                         print = true;
                         break;

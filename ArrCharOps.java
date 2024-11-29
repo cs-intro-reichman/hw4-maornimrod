@@ -162,16 +162,14 @@ public class ArrCharOps {
      *         return -2 if there is an error with the input.
      */
     public static int compareTo(String str1, String str2) {
-        if (str1 == null || str2 == null) {
+        if (str1 == "" || str2 == "") {
             return -2; //if there's an error
         }
 
         for (int i = 0; i < Math.min(str1.length(), str2.length()); i++) {
         //if the characters in index i are different, check who's smaller
-            char char1 = Character.toLowerCase(str1.charAt(i));
-            char char2 = Character.toLowerCase(str2.charAt(i));
-            if(char1 != char2){
-                if(char1 < char2){
+            if(str1.charAt(i)!=str2.charAt(i)){
+                if(str1.charAt(i)<str2.charAt(i)){
                     return -1;
                 }
                 else{
