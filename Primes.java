@@ -18,10 +18,12 @@ public class Primes {
             }
             i++;
         }
+        System.out.println("Prime numbers up to " + length);
         int counter =0;
         for(int a = 0; a<arr.length; a++){
             if(arr[a]){
                 counter++;
+                System.out.println(a);
             }
         }
         System.out.println("There are "+ counter + " primes between 2 and "+ length+ " (" +(counter*100)/length + "% are primes)");
